@@ -1,0 +1,30 @@
+@media (max-width: 640px) {
+    .title {
+        font-size: x-large;
+        overflow-wrap: break-word;
+    }
+}
+
+@media (min-width: 900px) {
+
+}
+
+@media (min-width: 1800px) {
+    .mainContainer {
+        font-size: xx-large;
+    }
+    .plus,.less {
+        width: 70px;
+        margin: 20px;
+    }
+    .buttonMicrophone{
+        margin: auto;
+        width: 90px;
+        height: 80px;
+    
+    }
+    .buttonMicrophone img {
+        width: 70px;
+        height: 70px;
+    }
+}
