@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
     <title>SpeechWriter</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="mainContainer">
-        <div class="topText">
-            <h1 class="title">SpeechWriter</h1>
-            <button class="buttonDark">
-                <img src="./picture/modo-oscuro.svg" alt="darkMode">
-            </button>
-        </div>
-
-        <main class="textBox">
-            <h3>Your text here.</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, /
-                sed do eiusmod tempor incididunt ut labore et dolore magna /
-                aliqua. Laoreet id donec ultrices tincidunt arcu non sodales /
-                neque sodales. A erat nam at lectus urna. Turpis egestas maecenas /
-                pharetra convallis posuere morbi leo urna molestie. Nunc lobortis /
-                mattis aliquam faucibus purus in massa. Fusce id velit ut tortor /
-                pretium. Et molestie ac feugiat sed lectus vestibulum. Vitae /
-                et leo duis ut diam quam. Lorem sed risus ultricies tristique nulla.
-            </p>
-        </main>
-        <div class="fontSize">
-            <h4>Font Size</h4>
-            <button class="plus" alt="+">+</button>
-            <button class="less" alt="lessSize">-</button>
-        </div>
-        <button class="buttonMicrophone">
-            <img src="./picture/microphone2.svg" alt="microphone">
+      <div class="topText">
+        <h1 class="title">SpeechWriter</h1>
+        <button class="buttonDark">
+          <img src="./picture/modo-oscuro.svg" alt="darkMode" />
         </button>
+      </div>
 
+      <main class="inputTextBox">
+        <div class="rawText">
+          <h3>RAW TEXT</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          <div class="buttonWrapper">
+            <button class="buttonMicrophone">
+              <img src="./picture/microphone2.svg" alt="microphone" />
+            </button>
+            <button class="buttonStop">
+              <img src="./picture/enviar.svg" alt="enviar">
+            </button>
+          </div>
+        </div>
+
+        <div class="cleanText">
+          <h3>EDITOR</h3>
+          <textarea
+            name="message"
+            id=""
+            cols="0"
+            rows="0"
+            class="editableText"
+          ></textarea>
+          <button class="buttonSend">
+            <img src="./picture/enviar.svg" alt="enviar">
+          </button>
+        </div>
+
+        <div class="fontSize">
+          <h4>Font Size</h4>
+          <button class="plus" alt="+">+</button>
+          <button class="less" alt="lessSize">-</button>
+        </div>
+      </main>
+
+      <div class="content"></div>
     </div>
     <script type="module" src="./src/main.js"></script>
-</body>
-
+  </body>
 </html>
