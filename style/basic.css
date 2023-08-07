@@ -1,59 +1,102 @@
 body {
-    background-color: #E6D0DE;
-    font-size: large;
-    font-family: Verdana, Tahoma, sans-serif;
+  background-color: #e6d0de;
+  font-size: large;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .mainContainer {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.topText {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
-.textBox {
-    border-color: black;
-    box-sizing: content-box;
-    margin: 2%;
+.title {
+  grid-column: 4;
+}
+.buttonDark {
+  grid-column: 7;
+  margin: auto;
+  border-radius: 50%;
+}
+.buttonDark img {
+  width: 40px;
+  height: 40px;
 }
 
+.inputTextBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rawText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.rawText p {
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  overflow: scroll;
+}
+
+.buttonMicrophone,
+.buttonStop {
+  margin: 5px;
+}
+
+.rawText .buttonWrapper {
+  display: flex;
+}
+.buttonMicrophone {
+  margin: auto;
+  width: 70px;
+  height: 60px;
+}
+
+.buttonMicrophone img,
+.buttonStop img,
+.buttonSend img {
+  width: 50px;
+  height: 50px;
+}
+.cleanText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.cleanText h3,
+.cleanText .editableText {
+  margin: 5px;
+}
+
+.buttonSend {
+  margin: 5px;
+}
+
+.cleanText .buttonWrapper {
+  display: flex;
+}
+
+.editableText {
+  width: 500px;
+  height: 400px;
+}
 .fontSize {
-    padding: 3px;
+  padding: 3px;
 }
 
 .plus,
 .less {
-    font-size: large;
-    width: 50px;
-    margin: 20px;
-}
-
-.buttonMicrophone {
-    margin: auto;
-    width: 70px;
-    height: 60px;
-
-}
-
-.buttonMicrophone img {
-    width: 50px;
-    height: 50px;
-}
-
-.topText {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.title {
-    grid-column:4;
-    
-}
-.buttonDark {
-    grid-column: 7;
-    margin: auto;   
-    border-radius: 50%;
-}
-.buttonDark img {
-    width: 40px;
-    height: 40px;
+  font-size: large;
+  width: 50px;
+  margin: 20px;
 }
