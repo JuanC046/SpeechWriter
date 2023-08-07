@@ -42,7 +42,7 @@ buttonPaste.addEventListener(
 buttonSend.addEventListener(
   "click",
   () => {
-    editableText.value = rawText.textContent;
+    editableText.value += rawText.textContent;
     rawText.textContent = "";
   },
   false
@@ -52,7 +52,6 @@ buttonExport.addEventListener(
   () => {
     // crea un nuevo div
     // y añade contenido
-    console.log(editableText.value);
     let newDiv = document.createElement("div");
     let newContent = document.createTextNode(editableText.value);
     newDiv.appendChild(newContent); //añade texto al div creado.

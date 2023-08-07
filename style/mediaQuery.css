@@ -1,8 +1,14 @@
 @media (max-width: 640px) {
-    .title {
-        font-size: x-large;
-        overflow-wrap: break-word;
-    }
+    .mainContainer {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+      }
+      .inputTextBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 }
 
 @media (min-width: 900px) {

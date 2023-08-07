@@ -43,11 +43,13 @@ body {
   background-color: white;
   width: 500px;
   height: 400px;
+  padding: 5px;
   overflow: scroll;
 }
 
 .buttonMicrophone,
-.buttonStop {
+.buttonSend,
+.buttonPaste {
   margin: 5px;
 }
 
@@ -61,8 +63,9 @@ body {
 }
 
 .buttonMicrophone img,
-.buttonStop img,
-.buttonSend img {
+.buttonExport img,
+.buttonSend img,
+.buttonPaste img {
   width: 50px;
   height: 50px;
 }
@@ -75,10 +78,11 @@ body {
 
 .cleanText h3,
 .cleanText .editableText {
+  padding: 5px;
   margin: 5px;
 }
 
-.buttonSend {
+.buttonExport {
   margin: 5px;
 }
 
@@ -87,6 +91,8 @@ body {
 }
 
 .editableText {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: large;
   width: 500px;
   height: 400px;
 }
